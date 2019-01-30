@@ -499,4 +499,599 @@ ul
 
 
 
-	
+// ============ form =============
+.form-input-style
+	.form-input
+		margin-bottom: 20px
+.form-input
+	width: 100%
+	height: 40px
+	border-radius: 5px
+	border: 1px solid $color-base-light
+	background-color: $color-white
+	color: $color-base
+	font-family: "Exo 2"
+	font-size: 20px
+	line-height: 25px
+	font-weight: 400
+	padding: 0 9px 4px
+	text-overflow: ellipsis
+	&::placeholder
+		color: $color-base-light
+.invalid-input
+	border: 1px solid $color-accent-bright
+.disabled-input
+	background-color: $color-base-light
+	&::placeholder
+		color: $color-base-dark
+.form-area
+	padding: 10px!important
+	height: 140px
+	&.scrollbar-inner
+		&>.scroll-element
+			&.scroll-y
+				width: 6px
+			.scroll-bar
+				width: 3px
+.search-input
+	position: relative
+	.form-input
+		padding-right: 50px
+		background-image: url(../images/pic_search.svg)
+		@extend %bg-auto
+		background-position: right 7px center
+
+
+.clear-input
+	position: absolute
+	top: 5px
+	right: 5px
+	display: none
+	width: 30px
+	height: 30px
+	cursor: pointer
+	@extend %bg-auto
+	border: 0
+	outline: 0
+	background-color: #fff
+	background-image: url(../images/pic_delete-d.svg)
+	&:hover
+		background-image: url(../images/pic_delete.svg)
+
+// Карточка товара
+.amanit-product-card, .amanit-set
+	width: 100%
+	border: 1px solid $color-base
+	padding: 0 25px 8px
+	position: relative
+	margin-top: 30px
+	&__name
+		h2
+			margin-top: 0
+	&__header
+		padding: 15px 0 14px 74px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid $color-base-light
+		position: relative
+		.pic_print
+			position: absolute
+			top: -11px
+			left: -1px
+		&-info
+			margin-left: 10px
+			display: flex
+			align-items: center
+			color: $color-base
+			font-family: "Exo 2"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+	&__reviews
+		display: flex
+		align-items: center
+		padding-left: 25px
+		background-image: url(../images/pic_review.svg)
+		@extend %bg-auto
+		background-position: left bottom
+		min-height: 19px
+		margin-left: 19px
+	&__rating
+		display: flex
+		align-items: center
+		padding-left: 26px
+		background-image: url(../images/pic_stars.svg)
+		@extend %bg-auto
+		background-position: left center
+		min-height: 19px
+		margin-left: 15px
+	&__top
+		display: flex
+		justify-content: center
+		margin: 0 -10px
+		&>div
+			margin: 0 10px
+	&__img
+		min-width: 300px
+		min-height: 200px
+		background-image: url(../images/img_noimage.svg)
+		background-color: #f0f0f0
+		@extend %bg-auto
+	&__bot, &__act
+		border-top: 1px solid $color-base-light
+		border-bottom: 1px solid $color-base-light
+		padding: 2px 0 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.btn
+			margin-right: 0
+		&-left
+			display: flex
+			align-items: center
+			.btn
+				margin-left: 0
+				margin-right: 16px
+				&:not(:first-of-type)
+					margin-left: 16px
+	&__bot
+		border-bottom: none
+	&__quantity
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		margin-left: 4px
+		line-height: 15px
+	&.disabled
+		border-color: $color-base-light
+		a,p,h2,h3,h4,h5,h6
+			color: $color-base-light
+		.pic_print
+			opacity: .4
+	&__category, &__vendor-code
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		line-height: 15px
+	&__act-right
+		display: flex
+.amanit-product-card__img
+	background-color: transparent
+.amanit-product-card_related-services
+	padding: 24px 0 0
+	border-top: 1px solid $color-base-light
+.related-services, .amanit-set__act
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 -5px 13px
+		>p
+			color: $color-base
+			font-family: "Exo 2"
+			font-size: 20px
+			font-weight: 700
+			line-height: 25px
+		p, .js-link
+			margin: 0 5px
+	&__bot
+		padding-bottom: 16px
+		display: none
+		&-text
+			margin-bottom: 41px
+			p
+				width: 639px
+				height: 71px
+				color: $color-base
+				font-family: "Exo 2"
+				font-size: 12px
+				font-weight: 400
+				line-height: 15px
+				margin: 0 0 5px
+			a
+				color: $color-brand
+	&__price
+		white-space: nowrap
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 20px
+		font-weight: 400
+		line-height: 25px
+		display: flex
+		align-items: flex-end
+	&__result
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 -5px
+		>p
+			margin: 0 5px
+			color: $color-base
+			font-size: 20px
+			font-weight: 700
+			text-transform: uppercase
+		.btn
+			margin-right: 0
+			margin-left: 16px
+
+	&__total
+		margin: 0 5px
+		color: $color-base
+		font-size: 20px
+		font-weight: 700
+.amanit-product-card
+	.amanit-simple-list
+		ul
+			margin-top: 28px
+			li
+				margin-bottom: 15px
+	&__bot-right
+		display: flex
+		align-items: center
+.amanit-simple-list
+	ul
+		margin-top: 30px
+		list-style: none
+		li
+			color: $color-base
+			font-family: "Exo 2"
+			font-size: 20px
+			font-weight: 400
+			line-height: 25px
+			display: flex
+			margin-bottom: 20px
+			align-items: center
+			justify-content: space-between
+			>p
+				margin: 0
+				&:first-of-type
+					flex: 1
+					display: flex
+					align-items: flex-end
+					&:after
+						content: ''
+						display: flex
+						flex: 1
+						width: auto
+						height: 10px
+						margin: 0 3px 5px 5px
+						border-bottom: 1px dotted $color-base-light
+
+		.form-row
+			display: flex
+			align-items: flex-end
+			position: relative
+			&:after
+				content: ''
+				display: flex
+				flex: 1
+				width: auto
+				height: 10px
+				margin: 0 3px 5px 5px
+				border-bottom: 1px dotted $color-base-light
+		.common-checkbox
+			margin-top: 0
+		.help-info
+			margin-left: 6px
+			margin-bottom: 3px
+.pic_print
+	width: 60px
+	height: 53px
+	background-image: url(../images/pic_print.svg)
+	@extend %bg-cover
+.help-info
+	display: inline-block
+	min-width: 18px
+	width: 18px
+	height: 18px
+	background-image: url(../images/pic_help.svg)
+	background-color: #fff
+	padding: 5px
+	@extend %bg-auto
+	cursor: pointer
+// Страница Услуги
+.services-page
+	h1
+		text-align: left
+	h1+p, h2+p
+		margin-top: 32px
+	.amanit-simple-list
+		margin-bottom: 30px
+	.download-docs
+		margin-top: 36px
+		margin-bottom: 5px
+
+
+.download-docs
+	overflow: hidden
+	margin: 30px -40px 0
+	&__item
+		padding-left: 59px
+		padding-top: 8px
+		@extend %bg-auto
+		background-position: left top
+		min-height: 50px
+		display: inline-block
+		color: $color-brand
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		line-height: 15px
+		margin: 0 40px 30px
+		span
+			color: $color-base
+			text-transform: uppercase
+			display: inline-block
+			margin-top: 5px
+		&.format-doc
+			background-image: url(../images/pic_doc.svg)
+		&.format-pdf
+			background-image: url(../images/pic_pdf.svg)
+
+
+
+// Готовое решение
+.amanit-set-wrap
+	.amanit-product-card
+		margin-bottom: 30px
+	h2+.amanit-product-card
+		margin-top: 48px
+.amanit-set
+	padding: 0
+	padding-top: 32px
+	border: 0
+	width: 100%
+	&__header
+		padding-left: 0
+		padding-bottom: 18px
+	&__name
+		h1
+			margin: 0
+		p
+			color: $color-base
+			font-family: "Exo 2"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+			margin: 0
+	&__img
+		margin-top: 20px
+	&__act
+		margin-bottom: 10px
+	.amanit-footnote
+		text-align: right
+.amanit-footnote
+	width: 100%
+	color: $color-base
+	font-family: "Exo 2"
+	font-size: 12px
+	font-weight: 400
+	line-height: 15px
+	text-align: right
+	a
+		color: $color-brand
+
+.add-another-product
+	text-align: center
+	margin-top: 50px
+	p
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		line-height: 15px
+		margin: 0 0 11px
+.floating-section-inner
+	.amanit-set__act
+		padding-top: 15px
+		padding-bottom: 15px
+.amanit-set-product-list
+	ul
+		list-style: none
+	>ul
+		padding-left: 39px
+		>li
+			min-height: 53px
+			margin-bottom: 27px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 60px
+				height: 53px
+				background-image: url(../images/pic_print.svg)
+			.container-flex
+				padding-left: 75px
+				display: flex
+				justify-content: space-between
+				margin-bottom: 35px
+				p
+					&:first-of-type
+						flex: 1
+						display: flex
+						&:after
+							content: ''
+							display: flex
+							flex: 1
+							width: auto
+							height: 1em
+							margin: 0 5px
+							border-bottom: 1px dotted #c8d2dc
+
+
+			p
+				position: relative
+				margin: 0 0 5px
+				span
+					position: absolute
+					top: 100%
+					left: 0
+					color: $color-base
+					font-family: "Exo 2"
+					font-size: 12px
+					font-weight: 400
+					line-height: 15px
+			.related-services-list
+				padding-left: 38px
+
+
+
+
+.related-services-list
+	list-style: none
+	li
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		line-height: 15px
+		margin-bottom: 7px
+		position: relative
+		padding-left: 37px
+		padding-bottom: 3px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 22px
+			height: 18px
+			background-image: url(../images/pic_check.svg)
+			@extend %bg-contain
+
+
+
+
+.form-row
+	&-group
+		display: flex
+	&.select-style
+		width: auto
+		&:not(:last-of-type)
+			margin-right: 32px
+
+.select-style
+	font-family: "Exo 2"
+	font-size: 12px
+	line-height: 15px
+	label
+		color: $color-base
+	select
+		cursor: pointer
+		background-color: transparent
+		border: 0
+		outline: 0
+		-webkit-appearance: none
+		&::-ms-expand
+			display: none
+		color: $color-brand
+		text-decoration: underline
+		text-decoration-style: dotted
+	option
+		color: $color-base
+.search-form
+	margin-bottom: 38px
+	.form-input-style
+		.form-input
+			margin-bottom: 8px
+.price-wrap
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	margin: 0 10px
+.old-price
+	padding-left: 24px
+	@extend %bg-contain
+	background-position: left top
+	background-image: url(../images/pic_discount.svg)
+	text-decoration: line-through
+	color: $color-base
+	font-family: "Exo 2"
+	font-size: 12px
+	font-weight: 400
+	line-height: 15px
+.current-price
+	color: $color-base
+	font-size: 20px
+	font-weight: 700
+.amanit-product__slider
+	.slider-wrap
+		position: relative
+		padding-top: 20px
+		.amanit-dots
+			position: absolute
+			top: 10px
+			left: 0
+
+.amanit-dots
+	margin-top: 0
+	font-size: 0
+	display: flex
+	li
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		cursor: pointer
+		border: 1px solid $color-base-dark
+		line-height: 5px
+		position: relative
+		&:not(:last-of-type)
+			margin-right: 5px
+		button
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 0
+			border-radius: 50%
+			width: 5px
+			height: 5px
+			text-align: center
+		&.slick-active
+			button
+				background-color: $color-base-dark
+
+.list-ico
+	padding-top: 20px
+	ul
+		list-style: none
+		margin-top: 0
+		li
+			font-family: "Exo 2"
+			font-size: 20px
+			font-weight: 400
+			line-height: 25px
+			position: relative
+			padding-left: 38px
+			margin-bottom: 15px
+			&:before
+				content: ''
+				position: absolute
+				top: 5px
+				left: 0
+				width: 16px
+				height: 16px
+				background-image: url(../images/pic_bullet.svg)
+				@extend %bg-contain
+
+.amanit-single-product
+	.toggle-box
+		&__inner
+			overflow: hidden
+			height: 150px
+			display: -webkit-box
+			-webkit-line-clamp: 5
+			-webkit-box-orient: vertical
+			&.active
+				height: auto
+				-webkit-line-clamp: none
+				-webkit-box-orient: unset
+				overflow: visible
+				display: block
+	.list-ico
+		column-count: 2	
