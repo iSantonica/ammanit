@@ -621,12 +621,15 @@ ul
 	&__bot, &__act
 		border-top: 1px solid $color-base-light
 		border-bottom: 1px solid $color-base-light
-		padding: 2px 0 0
+		padding: 9px 0
 		display: flex
 		align-items: center
 		justify-content: space-between
 		.btn
 			margin-right: 0
+		p
+			margin-bottom: 0
+			margin-top: 0
 		&-left
 			display: flex
 			align-items: center
@@ -658,6 +661,20 @@ ul
 		line-height: 15px
 	&__act-right
 		display: flex
+	.amanit-footnote
+		margin-top: 7px
+.billet-wrap
+	border-top: 1px solid $color-base-light
+	border-bottom: 1px solid $color-base-light
+	padding: 9px 0
+	min-height: 69px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 0 -5px
+	p
+		margin: 0 5px
+		font-weight: 700
 .amanit-product-card__img
 	background-color: transparent
 .amanit-product-card_related-services
@@ -1080,6 +1097,10 @@ ul
 				@extend %bg-contain
 
 .amanit-single-product
+	.amanit-product-card
+		border: 0
+		&__bot
+			border-bottom: 1px solid $color-base-light
 	.toggle-box
 		&__inner
 			overflow: hidden
@@ -1094,4 +1115,36 @@ ul
 				overflow: visible
 				display: block
 	.list-ico
-		column-count: 2	
+		column-count: 2
+
+.review-rating
+	ul
+		list-style: none
+		display: flex
+		margin-top: 0
+		li
+			width: 20px
+			height: 20px
+			@extend %bg-contain
+			background-image: url(../images/pic_stars.svg)
+			&:not(:last-of-type)
+				margin-right: 5px
+			&.star
+				background-image: url(../images/pic_stars-fill.svg)
+
+.review-name
+	padding-left: 23px
+	color: $color-base
+	font-size: 12px
+	font-weight: 400
+	line-height: 15px
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 18px
+		height: 16px
+		background-image: url(../images/pic_review-dark.svg)
+		@extend %bg-contain
