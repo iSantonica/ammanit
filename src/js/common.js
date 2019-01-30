@@ -19,14 +19,7 @@ $('#show-cart').on('click', function(){
   }
 });
 
-  $('.scrollbar-inner').scrollbar();
-
-
-
-  if(window.matchMedia("(max-width: 1024px)").matches){
-
-  } 
-
+  $('.scrollbar-inner').scrollbar(); 
 
 });
 
