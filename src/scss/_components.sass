@@ -80,6 +80,7 @@ h1
 	color: $color-base
 	text-align: center
 	font-weight: 700
+	margin-bottom: 30px
 
 h2
 	font-size: 30px
@@ -141,6 +142,15 @@ a
 			transform: rotate(-180deg)
 			top: 4px
 
+.js-link-arr-left
+	&::after
+		content: url(../images/arr-down.svg)
+		transform: rotate(90deg)
+		right: auto
+		left: -8px
+		top: 2px
+
+
 .js-toogle-link
 	color: $color-brand
 	font-family: "Exo 2"
@@ -152,7 +162,6 @@ a
 	position: relative
 	text-decoration-line: underline
 	text-decoration-style: dotted
-	padding-right: 9px
 	transition: 0.3s
 	padding: 10px
 	padding-right: 19px
@@ -206,6 +215,7 @@ ul
 		display: inline-block
 		transition: 0.5s
 		span
+			white-space: nowrap
 			border-radius: 20px
 			color: #fff
 			font-family: "Exo 2"
@@ -302,6 +312,26 @@ ul
 				&::before
 					left: 50%
 					transform: translate(-50%, -50%)
+	&.btn-pic-cell
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_cell.svg) no-repeat center center
+	&.btn-pic-info
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_info.svg) no-repeat center center
+	&.btn-pic-basket
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_basket2.svg) no-repeat center center
+	&.btn-pic-notification
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_checkmark_green.svg) no-repeat center center
 
 
 /*checkboxes*/
@@ -347,6 +377,7 @@ ul
 .common-checkbox-input
 	z-index: -1
 	opacity: 0
+	display: none
 	&:checked
 		& + .common-checkbox
 			&::after
@@ -406,6 +437,7 @@ ul
 .common-radio-input
 	z-index: -1
 	opacity: 0
+	display: none
 	&:checked
 		& + .common-radio
 			&::after
@@ -496,6 +528,95 @@ ul
 .footer-second
 	.footer-inner
 		background: url(../images/img_bee.png) no-repeat left calc(50% + 5px)
+
+.centered-block
+	text-align: center
+
+#fast-access
+	position: fixed
+	bottom: 30px
+	right: 15px
+	width: 30px
+
+.fast-access-btn
+	display: block
+	margin-bottom: 15px
+	text-align: center
+
+#fast-access-popup
+	display: block
+	width: 400px
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1)
+	background-color: $color-white
+	position: fixed
+	bottom: 45px
+	right: 60px
+	z-index: 10
+	.fast-access-inner-show
+		display: block
+
+.fast-access-sitemap
+	padding: 20px
+	display: none
+
+.sitemap-menu
+	list-style: none
+	column-count: 2
+	margin-top: 0
+	li
+		margin-bottom: 5px
+	.current-menu-item
+		a
+			text-decoration: none
+			color: $color-base
+
+.fast-access-contacts
+	padding: 20px
+	display: none
+	ul
+		list-style: none
+		column-count: 2
+		margin-top: 0
+		li
+			margin-bottom: 5px
+			display: inline-block
+		p
+			color: $color-base
+			font-family: "Exo 2"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+			margin: 0
+			a
+				color: $color-brand
+
+.fast-access-search
+	padding: 20px
+	display: none
+
+#notification
+	display: block
+	width: 550px
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1)
+	background-color: $color-white
+	position: fixed
+	bottom: 45px
+	right: 60px
+	z-index: 10
+	padding: 20px
+	display: none
+	p
+		color: $color-base
+		font-family: "Exo 2"
+		font-size: 12px
+		font-weight: 400
+		line-height: 15px
+	.notification-inner
+		display: flex
+		p
+			margin: 0
+			margin-right: 20px
+			align-items: center
 
 
 
@@ -889,13 +1010,15 @@ ul
 		padding-top: 15px
 		padding-bottom: 15px
 .amanit-set-product-list
+	margin-top: 60px
 	ul
 		list-style: none
 	>ul
 		padding-left: 39px
+		padding-right: 35px
 		>li
 			min-height: 53px
-			margin-bottom: 27px
+			margin-bottom: 33px
 			position: relative
 			&:before
 				content: ''
