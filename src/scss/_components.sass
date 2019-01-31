@@ -347,6 +347,7 @@ ul
 .common-checkbox-input
 	z-index: -1
 	opacity: 0
+	display: none
 	&:checked
 		& + .common-checkbox
 			&::after
@@ -406,6 +407,7 @@ ul
 .common-radio-input
 	z-index: -1
 	opacity: 0
+	display: none
 	&:checked
 		& + .common-radio
 			&::after
@@ -661,6 +663,7 @@ ul
 		line-height: 15px
 	&__act-right
 		display: flex
+		align-items: center
 	.amanit-footnote
 		margin-top: 7px
 .billet-wrap
@@ -1011,6 +1014,9 @@ ul
 		text-decoration-style: dotted
 	option
 		color: $color-base
+h2
+	&+.search-form
+		margin-top: 30px
 .search-form
 	margin-bottom: 38px
 	.form-input-style
@@ -1075,6 +1081,7 @@ ul
 
 .list-ico
 	padding-top: 20px
+.list-ico, .single-article-section article
 	ul
 		list-style: none
 		margin-top: 0
