@@ -74,8 +74,8 @@ $('#show-cart').on('click', function(){
       .parent('.toggle-box')
       .find('.toggle-box__inner')
       .toggleClass('active');
-    console.log('click');
-  }); 
+  });
+
 
 });//end ready
 
