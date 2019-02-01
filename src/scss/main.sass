@@ -201,6 +201,11 @@
 		line-height: 15px
 		text-transform: uppercase
 		margin-bottom: 20px
+	.scrollbar-inner
+		.scroll-element
+			&.scroll-y
+				width: 4px
+				right: 0
 
 .amanit-cart-table-caption
 	h3
@@ -210,6 +215,7 @@
 	padding-top: 10px
 
 .amanit-cart-table
+	height: 400px
 	table
 		width: 100%
 		tr
@@ -275,6 +281,10 @@
 				&:last-child
 					text-align: right
 					padding-left: 10px
+
+.scroll-wrapper
+	.amanit-cart-table
+		padding-right: 10px
 		
 .qr-box
 	padding: 20px 0
