@@ -1,0 +1,353 @@
+
+//= chunks/header.html
+
+<div class="main-back">
+  <div class="container container-flex">
+    <section class="common-section main-section">
+
+      <div class="scrollbar-inner">
+        <div class="common-section__inner contact-page order-page">
+          <form action="">
+          <div class="container-inner">
+            <h1>Оформление заказа</h1>
+            <h2>Состав комплекта</h2>
+
+            <!--<to insert>-->
+
+            <!--</to insert>-->
+
+              <h2>Контактная информация</h2>
+              <div class="form-row">
+                <label for="">Контактное лицо <span>*</span></label>
+                <input class="form-input" type="text" placeholder="">
+              </div>
+              <div class="form-row-group">
+                <div class="form-row">
+                  <label for="">Телефон <span>*</span></label>
+                  <input class="form-input" type="tel" placeholder="">
+                </div>
+                <div class="form-row">
+                  <label for="">E-mail <span>*</span></label>
+                  <input class="form-input" type="email" placeholder="">
+                </div>
+              </div>
+
+              <h2>Доставка</h2>
+              <div class="form-row-group">
+                <div class="form-row">
+                  <input type="radio" name="dostavka" id="rad1" class="common-radio-input" checked>
+                  <label for="rad1" class="common-radio">Курьерская по С-Пб</label>
+                </div>
+                <div class="form-row">
+                  <input type="radio" name="dostavka" id="rad2" class="common-radio-input">
+                  <label for="rad2" class="common-radio">Курьерская по РФ</label>
+                </div>
+              </div>
+              <div class="form-row-group">
+                <div class="form-row">
+                  <input type="radio" name="dostavka" id="issue_point" class="common-radio-input">
+                  <label for="issue_point" class="common-radio">В пункт выдачи</label>
+                </div>
+                <div class="form-row">
+                  <input type="radio" name="dostavka" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">Самовывоз</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="">Адрес <span>*</span></label>
+                <input class="form-input" type="text" placeholder="">
+              </div>
+              <div class="form-row">
+                <label for="">Комментарий</label>
+                <div class="scroll-content">
+                  <textarea class="form-input form-area scrollbar-inner" placeholder=""></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="amanit-map-block">
+              <div class="amanit-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255809.49658374934!2d29.810518939422966!3d59.94024454400641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGW0Y8!5e0!3m2!1suk!2sua!4v1548939290563"  frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="container-inner">
+                <a href="javascript:;" class="click js-toogle-link">показать списком</a>
+              </div>
+            </div>
+
+            <div class="container-inner">
+              <p>Стоимость доставки 1 500 рублей.</p>
+
+              <h2>Оплата</h2>
+              <div class="form-row-group">
+                <div class="form-row">
+                  <input type="radio" name="oplata" id="oplata_fiz" class="common-radio-input" checked>
+                  <label for="oplata_fiz" class="common-radio">От физического лица</label>
+                  <small>Банковская карта, Яндекс.Деньги, Сбербанк Онлайн, Альфа-клик, Webmoney, QIWI Wallet и другое.</small>
+                </div>
+                <div class="form-row">
+                  <input type="radio" name="oplata" id="oplata_ur" class="common-radio-input">
+                  <label for="oplata_ur" class="common-radio">Самовывоз</label>
+                  <small>Выставление счёта через Сбербанк Бизнес Онлайн></small>
+                </div>
+              </div>
+
+              <div class="billet-wrap">
+                <div class="amanit-footnote">Нажимая на кнопку, вы соглашаетесь с нашей <a href="#">политикой конфиденциальности.</a>
+                </div>
+                <a href="" class="btn btn-main">
+                <span class="btn-inner">
+                 <span>Перейти к оплате</span>
+                </span>
+                </a>
+              </div>
+            //= chunks/footer-main.html
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="floating-section common-section">
+      <div class="scrollbar-inner">
+        <div class="floating-section-inner">
+          <a href="" class="js-link">скрыть</a>
+          <h2>Пункты выдачи</h2>
+          <form action="">
+            <ul class="delivery-list">
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-row">
+                  <input type="radio" id="rad4" class="common-radio-input">
+                  <label for="rad4" class="common-radio">
+                    <div class="delivery-item">
+                      <div class="delivery-item__info">
+                        <img src="images/pic_metro-blue.svg" alt=""><span class="delivery-item__title">Пионерская</></div>
+                      <p>Коломяжский проспект, д. 17, к. 1, ТРЦ «СитиМолл», 1-й этаж.</p>
+                      <p>График работы: ежедневно 10:00 – 22:00.</p>
+                    </div>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </form>
+
+
+
+          //= chunks/footer-second.html
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+</div>
+
+//= chunks/scripts.html
+

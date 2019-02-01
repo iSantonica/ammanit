@@ -1,0 +1,193 @@
+
+h2+.form-row
+		margin-top: 30px
+.review-block
+	margin-top: 40px
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 0 -10px
+		.review-name, .review-rating
+			margin: 0 10px 10px
+	&__bot
+		p
+			margin-top: 5px
+.product-card_mod
+	border: 0
+	.amanit-product-card__bot
+		border-bottom: 1px solid $color-base-light
+
+.floating-section-inner
+	.product-card_mod
+		padding-left: 0
+		padding-right: 0
+.list-info, .article-date, .newtab-link, .delivery-item__info, .form-row
+	label
+	color: $color-base
+	font-family: "Exo 2"
+	font-size: 12px
+	font-weight: 400
+	line-height: 15px
+.list-info
+	padding-left: 24px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 18px
+		height: 18px
+		background-image: url(../images/pic_parameters.svg)
+		@extend %bg-contain
+
+.simple-list-wrap
+	.amanit-simple-list
+		margin: 42px 0 43px
+		ul
+			margin-top: 17px
+			li
+				margin-bottom: 15px
+.amanit-product-page,
+	h1
+		text-align: left
+		margin-bottom: 50px
+.article-page
+	h1
+		text-align: left
+	article
+		p
+			&:last-of-type
+				margin-bottom: 0
+		.js-toogle-link
+			margin-top: 5px
+
+.amanit-single-product
+	.amanit-product-card_related-services
+		border-top: 0
+		border-bottom: 1px solid $color-base-light
+	>.amanit-product-card
+		padding-left: 0
+		padding-right: 0
+.amanit-product-card__bot
+	&+.amanit-product-card__bot
+		border-top: 0
+
+.single-article-section
+	padding-top: 20px
+	h1
+		text-align: left
+		margin-top: 20px
+	article
+		a
+			font-size: 20px
+		img
+			margin-left: 10px
+			margin-top: 20px
+			float: right
+
+.contact-page
+	padding-left: 0
+	padding-right: 0
+	h1
+		text-align: left
+
+	.container-inner
+		padding-left: 80px
+		padding-right: 80px
+
+
+.amanit-map
+	width: 100%
+	height: 565px
+	margin: 30px 0
+	iframe
+		width: inherit
+		height: inherit
+
+	&-block
+		.js-toogle-link
+			margin-top: 0
+
+.contact-info-list
+	list-style: none
+	margin: 15px 0
+
+
+.newtab-link
+	a
+		padding-right: 14px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: 4px
+			right: 0
+			width: 10px
+			height: 10px
+			@extend %bg-contain
+			background-image: url(../images/pic_newtab.svg)
+
+
+
+
+
+.delivery-item
+	padding-top: 3px
+	&__info
+		margin-bottom: 15px
+		display: flex
+		align-items: center
+		img
+			margin-right: 4px
+	p
+		margin: 0
+
+.delivery-list
+	list-style: none
+	margin-top: 40px
+	li
+		margin-bottom: 40px
+		.common-radio
+			margin-top: 0
+		label
+			&:before, &:after
+				top: 0
+				transform: translateY(0)
+			&:after
+				transform: translateY(7px)
+
+
+.form-row-group
+	display: flex
+	justify-content: center
+	margin: 0 -10px
+	flex-wrap: wrap
+	.form-row
+		margin-left: 10px
+		margin-right: 10px
+		flex: 1 1 220px
+.order-page
+	h2
+		margin-bottom: 35px
+	.form-row
+		margin-bottom: 15px
+		textarea
+			height: 90px
+
+
+.form-row
+	label
+		display: block
+		margin-bottom: 8px
+		span
+			color: $color-accent-bright
+	small
+		display: block
+		margin-top: 15px
+	.common-radio
+		margin-top: 0
+
+
+
