@@ -319,6 +319,30 @@ ul
 				&::before
 					left: 50%
 					transform: translate(-50%, -50%)
+	&.btn-like
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_like.svg) no-repeat center center
+	&.btn-share
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_share.svg) no-repeat center center
+	&.btn-delete
+		background-image: linear-gradient(-30deg, #ffa42d 0%, #ff662d 100%)
+		.btn-inner
+			span
+				border: 2px solid #ff662d
+				&::before
+					background: url(../images/pic_delete.svg) no-repeat center center
+	&.btn-change
+		background-image: linear-gradient(-30deg, #ffa42d 0%, #ff662d 100%)
+		.btn-inner
+			span
+				border: 2px solid #ff662d
+				&::before
+					background: url(../images/pic_change.svg) no-repeat center center
 	&.btn-pic-cell
 		.btn-inner
 			span
