@@ -8,15 +8,18 @@ $(document).ready(function () {
 $('.click').on('click', function(){
   $('.floating-section').toggleClass('floating-visible');
   $(this).toggleClass('active');
+  $('.container').toggleClass('container-overlay');
 });
 
 $('.click2').on('click', function(){
   $('.floating-section').addClass('floating-visible');
   $(this).closest('li').addClass('current-menu-item');
+  $('.container').toggleClass('container-overlay');
 });
 
 $('#close-link').on('click', function(){
   $('.floating-section').removeClass('floating-visible');
+  $('.container').removeClass('container-overlay');
 });
 
 /* Temp-code-end */

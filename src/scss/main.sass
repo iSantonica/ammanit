@@ -27,10 +27,17 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
+	margin-right: 40px
+.header-right
+  flex: 1 0 0
+	
+.header-right-bottom
+	display: flex
+	justify-content: space-between
+	align-items: center
 
 .logo-box
 	text-align: center
-	margin-right: 40px
 
 .logo
 	margin-bottom: 5px
@@ -60,7 +67,9 @@
 			&:hover
 				color: $color-accent-light
 			
-
+.bottom-menu-short
+	display: none
+	
 .main-menu
 	margin-bottom: 15px
 	.current-menu-item
@@ -125,11 +134,9 @@
 	border-radius: 10px
 	background-color: #000000
 	border: 2px solid $color-white
-	margin-top: 40px
 	position: relative
 
 .cart-paper
-	position: relative
 	width: 400px
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1)
 	background-color: $color-white

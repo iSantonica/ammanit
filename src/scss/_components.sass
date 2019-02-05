@@ -404,7 +404,12 @@ ul
 		&::before
 			border-color: #96a0aa
 
-
+.form-row
+	.common-checkbox
+		margin-bottom: 0
+	.common-radio
+		margin-bottom: 0
+		
 .common-checkbox-input
 	z-index: -1
 	opacity: 0
@@ -515,7 +520,7 @@ ul
 	border-top: 1px solid transparent
 
 .common-section
-	.scrollbar-inner
+	> .scrollbar-inner
 		overflow: auto
 		height: calc(100vh - 120px)
 
@@ -569,11 +574,14 @@ ul
 	bottom: 30px
 	right: 15px
 	width: 30px
+	z-index: 30
 
 .fast-access-btn
 	display: block
 	margin-bottom: 15px
 	text-align: center
+	z-index: 15
+	position: relative
 
 #fast-access-popup
 	display: block
@@ -583,7 +591,7 @@ ul
 	position: fixed
 	bottom: 45px
 	right: 60px
-	z-index: 10
+	z-index: 20
 	.fast-access-inner-show
 		display: block
 

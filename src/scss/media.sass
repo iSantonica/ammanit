@@ -1,6 +1,84 @@
 @import "variables"
 @import "functions"
 
-@media screen and (max-width: 1366px)
-	html
-		font-size: 15px
+@media screen and (max-width: 1800px)
+	.container
+		max-width: unset
+		padding-left: 110px
+		padding-right: 110px
+		position: relative
+		&.container-overlay
+			&::before
+				position: absolute
+				content: ""
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				background: rgba(0,0,0,0.4)
+				display: block
+				z-index: 12
+		
+	.common-section
+		min-width: 840px
+		
+	.floating-section
+		transform: translateX(1000px)
+		position: absolute
+		top: 0
+		right: 110px
+		z-index: 15
+		
+	.floating-visible
+		transform: none
+		
+@media screen and (max-width: 1200px)
+	.container
+		padding-left: 60px
+		padding-right: 60px
+		
+	.floating-section
+		right: 60px
+		
+	
+		
+
+@media screen and (max-width: 980px)
+	.common-section
+		min-width: 100%
+		
+	.container
+		padding: 0
+		
+	.floating-section
+		right: 0
+		min-width: 100%
+		max-width: 100%
+	
+	#fast-access
+		display: none
+		
+	.common-section__inner
+		padding-right: 40px
+		padding-left: 40px
+		
+	.floating-section-inner
+		padding-right: 40px
+		padding-left: 40px
+		
+	.footer
+		padding-right: 40px
+		padding-left: 40px
+		
+	.bottom-menu-full
+		display: none
+	
+	.bottom-menu-short
+		display: flex
+		
+	.common-section__inner.contact-page
+		.container-inner
+			padding-left: 40px
+			padding-right: 40px
+			
+	
