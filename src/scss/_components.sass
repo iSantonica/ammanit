@@ -330,14 +330,12 @@ ul
 				&::before
 					background: url(../images/pic_share.svg) no-repeat center center
 	&.btn-delete
-		background-image: linear-gradient(-30deg, #ffa42d 0%, #ff662d 100%)
 		.btn-inner
 			span
 				border: 2px solid #ff662d
 				&::before
 					background: url(../images/pic_delete.svg) no-repeat center center
 	&.btn-change
-		background-image: linear-gradient(-30deg, #ffa42d 0%, #ff662d 100%)
 		.btn-inner
 			span
 				border: 2px solid #ff662d
@@ -363,7 +361,18 @@ ul
 			span
 				&::before
 					background: url(../images/pic_checkmark_green.svg) no-repeat center center
-
+					
+	&.btn-pic-email
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_email_btn.svg) no-repeat center center
+					
+	&.btn-pic-add
+		.btn-inner
+			span
+				&::before
+					background: url(../images/pic_plus_w.svg) no-repeat center center
 
 /*checkboxes*/
 
@@ -814,6 +823,11 @@ ul
 			color: $color-base-light
 		.pic_print
 			opacity: .4
+			&.pic_print-img
+				opacity: 1
+				background-image: none
+				img
+					opacity: .4
 	&__category, &__vendor-code
 		color: $color-base
 		font-family: "Exo 2"
@@ -962,6 +976,7 @@ ul
 	width: 60px
 	height: 53px
 	background-image: url(../images/pic_print.svg)
+	background-color: #fff
 	@extend %bg-cover
 .help-info
 	display: inline-block
@@ -973,6 +988,13 @@ ul
 	padding: 5px
 	@extend %bg-auto
 	cursor: pointer
+	
+.amanit-product-card
+	&.amanit-product-card-only-header
+		padding-bottom: 0
+		.amanit-product-card__header
+			border-bottom: none
+	
 // Страница Услуги
 .services-page
 	h1
