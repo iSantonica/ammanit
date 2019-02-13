@@ -99,6 +99,22 @@
 				width: 100%
 				left: 0
 				background-color: #fff
+			&:hover
+				&::after
+					background-color: $color-accent-light
+					
+li.lk_menu
+	a
+		&::after
+			height: 0
+			border-bottom: 1px dotted #fff
+			background-color: transparent
+		&:hover
+			&::after
+				border-bottom: 1px dotted $color-accent-light
+				background-color: transparent
+				height: 0
+			
 
 .primary-menu
 	list-style: none
