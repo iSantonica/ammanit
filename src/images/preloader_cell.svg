@@ -1,0 +1,11 @@
+<svg id="Preloader" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3296dc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="pic_bullet" class="cls-1" d="M9,20L0,15V5L9,0l9,5V15ZM17,5.588L9,1.144,1,5.588v8.823l8,4.445,8-4.445V5.588ZM2,13.823V6.177L9,2.288l7,3.889v7.646L9,17.712ZM13,7.942L9,5.72,5,7.942v4.116L9,14.28l4-2.223V7.942Z"/>
+</svg>

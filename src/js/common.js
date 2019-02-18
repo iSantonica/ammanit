@@ -3,6 +3,66 @@
 
 $(document).ready(function () {
 
+  /*preloader*/
+
+  $('.prelouder-start').on('click', function(){
+    $('.preloader-cell').each(function(index) {
+      var item = $(this);
+      var timerId = setInterval(function() {
+
+        item.fadeTo( 1000 , 0.1, function() {
+          $(this).css('opacity', 1);
+        });
+      }, index * 200);
+
+    });
+  });
+
+  /*preloader END*/
+
+  /*menu mobile*/
+
+  $('.menu-toggle-btn').on('click', function(){
+    $('.header-right').slideToggle();
+  });
+
+
+  var mql = window.matchMedia('all and (max-width: 720px)');
+  var mql2 = window.matchMedia('all and (min-width: 721px)');
+
+  if (mql.matches) {
+    $('.bottom-menu-full').appendTo($('.header-right-top'));
+    $('.head-phone').appendTo($('.header-right-top'));
+
+    $('.cart-paper').appendTo($('.mobile-cart-wrap'));
+
+    $('#show-cart').text('скрыть корзину');
+    $('#show-cart').addClass('active');
+
+    $('#show-cart').on('click', function(){
+      $('.mobile-cart-wrap').slideUp();
+    });
+  }
+
+  if (mql2.matches) {
+    $('#show-cart').on('click', function(){
+      $('.cart-total-row').slideToggle();
+      $('.amanit-cart-table-wrap').slideToggle();
+      $(this).toggleClass('active');
+      if ($(this).hasClass('active')) {
+        $(this).text('скрыть корзину');
+      } else {
+        $(this).text('показать корзину');
+      }
+    });
+  }
+
+  /*cart mobile*/
+
+  $('.cart-toggle-btn').on('click', function(){
+    $('.mobile-cart-wrap').slideToggle();
+  });
+
   /* Temp-code */
 
 $('.click').on('click', function(){
@@ -46,16 +106,7 @@ $('#close-link').on('click', function(){
 
   /* fast-access end */
 
-$('#show-cart').on('click', function(){
-  $('.cart-total-row').slideToggle();
-  $('.amanit-cart-table-wrap').slideToggle();
-  $(this).toggleClass('active');
-  if ($(this).hasClass('active')) {
-    $(this).text('скрыть корзину');
-  } else {
-      $(this).text('показать корзину');
-  }
-});
+
 
   $('.scrollbar-inner').scrollbar();
 
