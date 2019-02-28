@@ -261,7 +261,7 @@
 		display: none
 		
 	.amanit-set-wrap
-		h2 + .amanit-product-card
+		h2 + .amanit-product-card__outer
 			margin-top: 40px
 			
 	.amanit-product-card__header-info
@@ -405,15 +405,57 @@
 	
 	.amanit-footnote
 		margin-bottom: 20px
+		
+	.qr-box
+		display: none
+		
+	.common-checkbox
+		&::before
+			transform: none
+			top: 0px
+		&::after
+			transform: none
+			top: -5px
+		
+	
 
 @media screen and (max-width: 475px)
 	.amanit-simple-list
 		ul
-			.form-row
+			.form-row, li
 				justify-content: space-between
-				align-items: center
+				align-items: flex-start
 				
-@media screen and (max-width: 320px)
 	.cart-paper
 		padding-left: 10px
 		padding-right: 10px
+		
+	.amanit-simple-list.amanit-simple-list_order-reverce
+		ul
+			.help-info
+				order: -1
+				margin-left: 0
+				margin-right: 10px
+			li>p:first-of-type
+				align-items: flex-start
+				
+	.common-section__inner
+		padding-right: 10px
+		padding-left: 10px
+	
+	.floating-section-inner
+		padding-right: 10px
+		padding-left: 10px
+	
+	.footer
+		padding-right: 10px
+		padding-left: 10px
+	
+	.common-section__inner.contact-page
+		.container-inner
+			padding-left: 10px
+			padding-right: 10px
+			
+	.common-section
+		.scrollbar-inner>.scroll-element.scroll-y
+			width: 5px

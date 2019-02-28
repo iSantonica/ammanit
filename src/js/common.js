@@ -85,23 +85,16 @@ $('#close-link').on('click', function(){
 /* Temp-code-end */
 
   /* fast-access */
-
-  $('#fast-access-btn-sitemap').on('click', function(){
-    $('#fast-access-popup .fast-access-sitemap').toggleClass('fast-access-inner-show');
-    $('#fast-access-popup').toggleClass('fast-access-show');
-    $(this).toggleClass('active');
-  });
-
-  $('#fast-access-btn-contacts').on('click', function(){
-    $('#fast-access-popup .fast-access-contacts').toggleClass('fast-access-inner-show');
-    $('#fast-access-popup').toggleClass('fast-access-show');
-    $(this).toggleClass('active');
-  });
-
-  $('#fast-access-btn-search').on('click', function(){
-    $('#fast-access-popup .fast-access-search').toggleClass('fast-access-inner-show');
-    $('#fast-access-popup').toggleClass('fast-access-show');
-    $(this).toggleClass('active');
+  
+  
+  $('.fast-access-btn').on('click', function() {
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $('.fast-access-block').removeClass('fast-access-inner-show')
+    } else {
+      $(this).addClass('active').siblings().removeClass('active');
+      $('#fast-access-popup').find('.fast-access-block').removeClass('fast-access-inner-show').eq($(this).index()).addClass('fast-access-inner-show');
+    }
   });
 
   /* fast-access end */
